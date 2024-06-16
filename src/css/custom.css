@@ -1,0 +1,57 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+.navbar-brand{
+    font-weight: bold;
+    font-size: 26px;
+}
+.message-box .post-media img{
+    height:210px;
+}
+.message-box  h3{
+    font-weight: bold;
+    font-size: 26px;
+}
+.message-box  p{
+    text-align: justify;
+}
+.sl-slide-inner blockquote p{
+    font-size: 18px !important;
+}
+.API{
+    margin-top: -50px !important;
+    margin-left:-30px;
+}
+.API .form-control{
+    
+}
+.row.active{
+    display: flex;
+    transition:cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+}
+.active{
+    color:crimson;
+}
+.link-tab .link-tabCont li{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color:darkslategrey;
+    cursor: pointer;
+    transition:ease-in 0.6s;
+}
+.link-tab .link-tabCont li:hover{
+    color:crimson;
+}
+.lbl{
+    position:relative;
+    top:-30px;
+}
+.immb{
+    transition: ease-in-out 0.5s;
+}
+.immb.deroulant{
+    height:82vh !important;
+}
+.immb.deroulant1{
+    height:92vh !important;
+}

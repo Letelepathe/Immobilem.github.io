@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Site Icons -->
+    <title>ImmoBIlem - Services de location & vente de batiments</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/versions.css">
+    <link rel="stylesheet" href="/src/css/owl.carousel.css">
+    <link rel="stylesheet" href="/src/css/slit-custom.css">
+   
+	<script src="/js/modernizr.custom.79639.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="seo_version">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <script src="/js/all.js"></script>
+    <script src="/js/habaIm.js"></script>
+    <script src="/js/tippy.all.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/hoverdir.js"></script>
+    <script src="/js/jquery.ba-cond.min.js"></script>
+    <script src="/js/jquery.slitslider.js"></script>
+    <script type="text/javascript">	
+            $(function() {
+            
+                var Page = (function() {
+    
+                    var $nav = $( '#nav-dots > span' ),
+                        slitslider = $( '#slider' ).slitslider( {
+                            onBeforeChange : function( slide, pos ) {
+    
+                                $nav.removeClass( 'nav-dot-current' );
+                                $nav.eq( pos ).addClass( 'nav-dot-current' );
+    
+                            }
+                        } ),
+    
+                        init = function() {
+    
+                            initEvents();
+                            
+                        },
+                        initEvents = function() {
+    
+                            $nav.each( function( i ) {
+                            
+                                $( this ).on( 'click', function( event ) {
+                                    
+                                    var $dot = $( this );
+                                    
+                                    if( !slitslider.isActive() ) {
+    
+                                        $nav.removeClass( 'nav-dot-current' );
+                                        $dot.addClass( 'nav-dot-current' );
+                                    
+                                    }
+                                    
+                                    slitslider.jump( i + 1 );
+                                    return false;
+                                
+                                } );
+                                
+                            } );
+    
+                        };
+    
+                        return { init : init };
+    
+                })();
+    
+                Page.init();
+            
+            });
+    </script>
+        
+    <script>
+        tippy('.btn-a')
+    </script>
+  <script type="text/javascript">
+
+  </script>
+  </body>
+</html>
